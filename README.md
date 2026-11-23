@@ -17,10 +17,12 @@ experiments. The paper-facing model name is **ADEPT**.
 src/adept/                         ADEPT source package
 scripts/experiments/               benchmark and diagnostic runners
 scripts/analysis/                  table, gate, and objective summaries
+revision/                          revision experiment and analysis runners
 vendor/upstream_benchmark/         vendored IMTS benchmark code
-docs/                              manuscript and bibliography files
-results/                           generated experiment outputs
 ```
+
+The local `docs/` manuscript folder, datasets, checkpoints, and generated
+experiment results are ignored by Git.
 
 ## Install
 
@@ -32,9 +34,6 @@ python -m venv .venv
 source .venv/bin/activate
 pip install -e ".[benchmark]"
 ```
-
-If the project virtualenv already exists at `/home/nckh2/qa/.venv`, the scripts
-can also be run with that interpreter.
 
 ## Quickstart
 
